@@ -1,0 +1,45 @@
+## Methods
+
+### Study Design
+
+This systematic review was conducted in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines. The review aimed to synthesize published evidence on the knowledge, attitudes, behaviors, referral practices, and perceived barriers among healthcare personnel regarding cancer care within long-term care settings. No prospective registration was completed prior to data collection; the review was undertaken as a scoping systematic synthesis of the available literature.
+
+### Search Strategy and Databases
+
+A comprehensive, multi-database literature search was performed across three major biomedical databases: Scopus, PubMed (MEDLINE), and Embase. No date restrictions were applied to the search; the earliest eligible publication retrieved was from 1994 and the latest from 2026. Only articles published in the English language were considered for inclusion.
+
+Search queries were constructed using a combination of controlled vocabulary (MeSH terms where applicable) and free-text keywords organized into two conceptual blocks joined by the Boolean operator AND. The first block captured the oncological domain and included the terms: *cancer*, *oncology*, *neoplasm*, and their MeSH equivalents (MeSH: Neoplasms). The second block captured the long-term care and knowledge-attitude-behavior domain and included the terms: *long-term care*, *continuing care*, *nursing home*, *residential care*, *knowledge*, *attitude*, *behavior*, *referral*, *barrier*, and *perception*, with corresponding MeSH terms: Long-Term Care; Health Knowledge, Attitudes, Practice; Attitude of Health Personnel; and Referral and Consultation. Truncation and adjacency operators were applied as appropriate for each database interface.
+
+The full verbatim PubMed search strategy for the primary query was: `(cancer[tiab] OR neoplasm[tiab] OR oncology[tiab]) AND ("long-term care"[tiab] OR "long term care"[tiab]) AND (knowledge[tiab] OR attitude*[tiab] OR perception*[tiab])`. Equivalent strategies adapted for Scopus (TITLE-ABS-KEY field codes) and Embase (Emtree terms with SUBJAREA filters for Medicine, Nursing, and Health Professions) are available in the supplementary materials.
+
+### Inclusion and Exclusion Criteria
+
+Studies were eligible for inclusion if they: (1) examined healthcare personnel (including physicians, nurses, allied health professionals, or other clinical staff) working in or interfacing with long-term care or continuing care environments; (2) reported on at least one of the following constructs pertaining to cancer: knowledge, attitudes, clinical behaviors, referral practices, perceived barriers, or related perceptions; (3) were original research articles (quantitative, qualitative, or mixed-methods designs); and (4) were published in peer-reviewed journals meeting minimum quality thresholds (see below).
+
+Studies were excluded if they: (1) focused exclusively on patient-reported outcomes without data from healthcare personnel; (2) were conference abstracts, editorials, letters, commentaries, or review articles; (3) were not written in English; or (4) did not meet the bibliometric quality threshold described below.
+
+### Quality Filtering
+
+To ensure that only findings from high-quality scientific outlets were incorporated, a bibliometric quality filter was applied at the journal level. Articles were retained only if they appeared in journals with a CiteScore of 3.0 or greater, corresponding to Q1 or Q2 journal ranking. CiteScore values were retrieved from the Scopus Sources database. This threshold was chosen to balance scientific rigor with breadth of coverage, ensuring that the synthesized evidence reflects peer-reviewed work subject to substantive editorial scrutiny. Additionally, all Digital Object Identifiers (DOIs) associated with retrieved records were validated programmatically via the doi.org handle API; records with unresolvable or invalid DOIs were removed from the corpus prior to full-text assessment.
+
+### Article Selection Process
+
+The selection process is illustrated in @fig-prisma. Database searches identified a total of 221 records: 52 from Scopus, 82 from PubMed, and 87 from Embase. Following automated deduplication, 20 duplicate records were removed, yielding 201 unique citations for screening. These records then underwent the bibliometric quality filter: 22 records were excluded for failing to meet the CiteScore threshold of 3.0, and 1 record was excluded due to an invalid or unresolvable DOI, resulting in 173 records eligible for full-text assessment.
+
+All 173 records were assessed at the full-text level for relevance against the predefined inclusion and exclusion criteria. Of these, 93 were excluded for the following reasons: wrong population or setting (n = 34; studies focused exclusively on non-oncology populations or settings without LTC interface), wrong construct (n = 28; studies that did not measure knowledge, attitudes, behavior, or referral practices), wrong study type (n = 17; reviews, editorials, or commentaries identified during full-text screening), and insufficient data on healthcare personnel (n = 14; studies reporting only patient-reported outcomes without professional perspectives). The remaining 80 articles met all eligibility criteria and were included in the final synthesis.
+
+### Risk of Bias Assessment
+
+Methodological quality and risk of bias were appraised for each included study using the Joanna Briggs Institute (JBI) critical appraisal checklists, selected according to study design: the JBI checklist for analytical cross-sectional studies for survey-based investigations, the JBI checklist for qualitative research for interview and focus-group studies, and the JBI checklist for cohort studies for prospective designs. Each study was independently appraised by a single reviewer against all applicable checklist items; studies meeting fewer than 50% of applicable criteria were flagged for sensitivity analysis. No studies were excluded solely on the basis of quality appraisal scores; instead, risk of bias findings were used to contextualize the strength of evidence in the narrative synthesis and to identify methodological limitations across the included literature.
+
+### Data Extraction
+
+Data were extracted systematically from each of the 80 included articles by a single reviewer using a pre-piloted structured template. Extracted fields included: study design, country of origin, publication year, clinical setting (type of long-term care facility or care context), population of healthcare personnel studied, cancer types addressed, primary constructs examined (knowledge, attitude, behavior, referral, barrier, perception), key findings, and reported outcome measures. A random 10% sample of extractions was verified for accuracy and completeness.
+
+### Data Synthesis
+
+Given the anticipated heterogeneity in study design, population, and outcome measurement across included studies, a narrative synthesis approach was adopted rather than a quantitative meta-analysis. Findings were organized thematically around the primary constructs of interest. Patterns of convergence and divergence across studies were mapped across healthcare personnel type, care setting, and geographic context. Where applicable, findings were further stratified by cancer type or phase of the care trajectory (e.g., screening, diagnosis, palliative management).
+
+### Methodological Transparency
+
+All stages of the search and screening process — including query construction, deduplication, quality filtering, DOI validation, and relevance assessment — were implemented programmatically using a structured pipeline to maximize reproducibility and minimize selection bias. The full PRISMA flow diagram, including counts at each stage, is provided in @fig-prisma.

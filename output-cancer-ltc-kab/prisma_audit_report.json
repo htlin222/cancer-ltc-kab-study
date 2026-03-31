@@ -1,0 +1,145 @@
+{
+  "audit_date": "2026-03-31",
+  "total_items": 17,
+  "passed": 10,
+  "partial": 5,
+  "failed": 2,
+  "items": [
+    {
+      "id": 1,
+      "description": "Title identifies the study as a systematic review",
+      "status": "PASS",
+      "location": "output-cancer-ltc-kab/literature_review.qmd",
+      "note": "Title reads: 'Oncology Professionals' Knowledge, Attitudes, and Referral Behavior Toward Long-Term Care for Elderly Cancer Patients: A Systematic Review'. Subtitle also states 'A Systematic Literature Review'. Fully compliant.",
+      "fix": null
+    },
+    {
+      "id": 2,
+      "description": "Structured abstract with Background, Methods, Results, Conclusion",
+      "status": "PARTIAL",
+      "location": "sections/00-abstract.qmd",
+      "note": "Abstract contains Background, Methods, Results, and Conclusion sections. However, it is missing explicit reporting of: (a) number of databases searched, (b) date range of search, (c) PROSPERO/registration number, and (d) PRISMA item 2 requires the abstract to state the review's eligibility criteria. The current abstract states only that 'search queries targeted oncology professionals' knowledge...' without listing explicit PICO-style inclusion criteria in the abstract itself.",
+      "fix": "In the Methods paragraph of the abstract, add: (1) state all three databases (Scopus, PubMed, Embase) explicitly; (2) state the date range ('from inception through March 2026'); (3) state inclusion criteria briefly (e.g., 'original studies reporting KAB of healthcare professionals in cancer/LTC settings in Q1/Q2 journals'); (4) add a sentence noting that no prospective protocol registration was completed (or add a PROSPERO registration)."
+    },
+    {
+      "id": 3,
+      "description": "Rationale for the review clearly stated",
+      "status": "PASS",
+      "location": "sections/01-introduction.qmd",
+      "note": "The final paragraph of the Introduction explicitly states: 'a systematic review synthesizing KAB-related data from cancer patients and healthcare professionals within LTC settings has not previously been conducted' and explains the gap and its consequences. Rationale is well-articulated.",
+      "fix": null
+    },
+    {
+      "id": 4,
+      "description": "Objectives or questions clearly stated",
+      "status": "PASS",
+      "location": "sections/01-introduction.qmd",
+      "note": "The final paragraph states three explicit, numbered objectives: (1) identify/characterise KAB domains among healthcare professionals; (2) describe KAB profiles of cancer patients; (3) identify determinants of KAB gaps. These correspond directly to the review questions.",
+      "fix": null
+    },
+    {
+      "id": 5,
+      "description": "Eligibility criteria (inclusion and exclusion) specified",
+      "status": "PASS",
+      "location": "sections/02-methods.qmd",
+      "note": "Methods section contains a dedicated 'Inclusion and Exclusion Criteria' subsection with four explicit inclusion criteria and four exclusion criteria. Study design types and language restriction are stated. Quality filtering criteria (CiteScore ≥ 3.0) are separately detailed.",
+      "fix": null
+    },
+    {
+      "id": 6,
+      "description": "Information sources (databases and dates) specified",
+      "status": "PASS",
+      "location": "sections/02-methods.qmd",
+      "note": "Methods states three databases (Scopus, PubMed/MEDLINE, Embase), confirms no date restrictions, states earliest publication (1994) and latest (2026), and specifies English-language restriction. Compliant.",
+      "fix": null
+    },
+    {
+      "id": 7,
+      "description": "Full search strategy for at least one database provided",
+      "status": "PARTIAL",
+      "location": "sections/02-methods.qmd",
+      "note": "The Methods section describes the conceptual search strategy (two blocks, Boolean AND, MeSH terms listed, truncation and adjacency operators mentioned). However, the full verbatim search string for at least one database is not provided. PRISMA 2020 item 7 requires that the full search strategy for at least one database be reported, including any filters applied.",
+      "fix": "Add a supplementary appendix (or a callout box in the Methods section) with the complete verbatim search query for at least one database (e.g., PubMed), including all Boolean operators, MeSH terms, free-text terms, field tags, and date/language filters as they were entered into the database interface."
+    },
+    {
+      "id": 8,
+      "description": "Selection process described (screening, eligibility, inclusion)",
+      "status": "PASS",
+      "location": "sections/02-methods.qmd",
+      "note": "The 'Article Selection Process' subsection describes: database search yields (221 total; 52 Scopus, 82 PubMed, 87 Embase), deduplication (20 removed), quality filter exclusions (22 for CiteScore < 3.0, 1 for invalid DOI), full-text assessment (173 records), relevance exclusions (93), and final inclusion (80). References a PRISMA flow diagram (@fig-prisma).",
+      "fix": null
+    },
+    {
+      "id": 9,
+      "description": "Data collection process described",
+      "status": "PARTIAL",
+      "location": "sections/02-methods.qmd",
+      "note": "The 'Data Extraction' subsection describes the fields extracted and states a 'structured template applied consistently.' However, PRISMA 2020 item 9 also requires reporting whether data extraction was performed in duplicate (by independent reviewers) and how discrepancies were resolved. The current text notes that 'extraction was performed using a structured template' but does not specify whether it was single or dual extraction, nor the resolution method.",
+      "fix": "Add a sentence to the Data Extraction subsection clarifying: (1) whether extraction was performed by one or two reviewers; (2) if single extractor, acknowledge this as a limitation; (3) if dual extraction, describe the process for resolving discrepancies (e.g., consensus discussion, third reviewer arbitration)."
+    },
+    {
+      "id": 13,
+      "description": "Risk of bias assessment in individual studies described",
+      "status": "FAIL",
+      "location": "sections/02-methods.qmd",
+      "note": "No risk of bias assessment of individual studies is described anywhere in the Methods section. PRISMA 2020 item 13 requires that the methods used to assess risk of bias in included studies be described. The review notes in Discussion (section 08) that included studies are predominantly cross-sectional surveys with inherent limitations, but no formal tool (e.g., NIH Quality Assessment Tool, JBI Critical Appraisal, GRADE) or systematic appraisal process is described or applied.",
+      "fix": "Add a 'Risk of Bias / Quality Assessment' subsection to the Methods (section 02). Specify: (1) the tool used to assess methodological quality (e.g., NIH Study Quality Assessment Tools, JBI Critical Appraisal Checklist for Cross-Sectional Studies, Mixed Methods Appraisal Tool [MMAT]); (2) which reviewer(s) performed the assessment; (3) how results informed inclusion decisions or synthesis. If the decision was made not to conduct formal risk of bias assessment, provide explicit justification and acknowledge this in Limitations."
+    },
+    {
+      "id": 16,
+      "description": "Study selection results presented (numbers at each stage, ideally PRISMA flow diagram)",
+      "status": "PARTIAL",
+      "location": "sections/02-methods.qmd",
+      "note": "Study selection numbers are described in the Methods text and a PRISMA flow diagram is referenced (@fig-prisma). However, the reasons for exclusion at the full-text stage are described only summarily ('insufficient relevance to the review question') without categorized breakdown (e.g., N excluded for each reason). PRISMA 2020 item 16 requires reporting the number of studies excluded at full-text with reasons.",
+      "fix": "In the 'Article Selection Process' subsection, expand the report of full-text exclusions: instead of 'primarily because they did not directly address healthcare personnel knowledge...,' provide a categorized list (e.g., N = X excluded: not reporting KAB constructs; N = Y: wrong population; N = Z: wrong setting, etc.). Ideally, present this as a table or as part of the PRISMA flow diagram."
+    },
+    {
+      "id": 17,
+      "description": "Study characteristics of included studies presented",
+      "status": "PARTIAL",
+      "location": "sections/03-kab-professionals.qmd, 04-kab-patients.qmd, 05-barriers.qmd, 06-discrepancy.qmd, 07-care-models.qmd",
+      "note": "Study characteristics are described narratively throughout the results sections, including study design, country, sample size, and population for cited studies. However, PRISMA 2020 item 17 recommends a summary table of characteristics of included studies. No such table is present. Individual study details are woven into the narrative, making systematic comparison difficult.",
+      "fix": "Add a table of included study characteristics (Table 1) either in the Methods/Results section or as a supplementary file. Columns should include: first author, year, country, study design, sample/population, cancer type(s), LTC setting, and KAB constructs examined. This table would cover all 80 included studies."
+    },
+    {
+      "id": 20,
+      "description": "Results of syntheses presented for each outcome/construct",
+      "status": "PASS",
+      "location": "sections/03-kab-professionals.qmd, 04-kab-patients.qmd, 05-barriers.qmd, 06-discrepancy.qmd, 07-care-models.qmd",
+      "note": "Results are organized thematically across five sections covering KAB of professionals, KAB of patients, barriers/facilitators, professional-patient discrepancies, and care coordination models. Each section synthesizes findings narratively by construct with citations. The narrative synthesis approach is appropriate given the methodological heterogeneity noted in the Methods.",
+      "fix": null
+    },
+    {
+      "id": 22,
+      "description": "Discussion interprets results in context of other evidence",
+      "status": "PASS",
+      "location": "sections/08-discussion.qmd",
+      "note": "Discussion covers: professional knowledge gap causes and consequences, patient unmet needs, systemic vs individual barriers, promising models, comparative health systems analysis, and implications for practice and policy. Results are interpreted in context of existing evidence and multiple health systems.",
+      "fix": null
+    },
+    {
+      "id": 23,
+      "description": "Limitations discussed (of evidence and of the review itself)",
+      "status": "PASS",
+      "location": "sections/08-discussion.qmd",
+      "note": "Two distinct limitations subsections are present: 'Limitations of the Reviewed Literature' and 'Limitations of This Review.' These cover cross-sectional study designs, geographic concentration, cancer type specificity, grey literature omission, CiteScore filter effects, heterogeneity precluding meta-analysis, and conceptual heterogeneity in populations. Thorough and appropriately self-critical.",
+      "fix": null
+    },
+    {
+      "id": 24,
+      "description": "Conclusions and practice/policy implications stated",
+      "status": "PASS",
+      "location": "sections/08-discussion.qmd",
+      "note": "Dedicated 'Implications for Practice' and 'Implications for Policy' subsections present four concrete practice recommendations and three policy-level recommendations. A 'Future Research Priorities' subsection adds prospective directions. These are specific, evidence-grounded, and directly derived from the synthesis.",
+      "fix": null
+    },
+    {
+      "id": 27,
+      "description": "Funding declaration present",
+      "status": "FAIL",
+      "location": "output-cancer-ltc-kab/literature_review.qmd and all section files",
+      "note": "No funding declaration or conflict of interest statement is present anywhere in the manuscript or its sections. PRISMA 2020 item 27 requires a description of sources of funding and other support, as well as the role of funders. This is also a standard journal requirement for any systematic review submission.",
+      "fix": "Add a 'Funding' section at the end of the manuscript (after Discussion, before References) stating the funding source(s) or explicitly declaring that 'This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.' Also add a 'Conflicts of Interest' statement and an 'Author Contributions' statement. If there is a PROSPERO registration number, include it here as well."
+    }
+  ]
+}

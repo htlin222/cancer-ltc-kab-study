@@ -1,0 +1,74 @@
+---
+title: "Oncology Professionals' Knowledge, Attitudes, and Referral Behavior Toward Long-Term Care for Elderly Cancer Patients: A Systematic Review"
+subtitle: "A Systematic Literature Review"
+date: "2026-03-31"
+author: "Automated Literature Review Pipeline"
+format:
+  pdf:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    cite-method: citeproc
+    documentclass: article
+    geometry:
+      - margin=1in
+    fontsize: 11pt
+    linestretch: 1.5
+  docx:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme: cosmo
+bibliography: references.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+---
+
+{{< include sections/00-abstract.qmd >}}
+
+# Introduction
+
+{{< include sections/01-introduction.qmd >}}
+
+# Methods
+
+{{< include sections/02-methods.qmd >}}
+
+# Results
+
+## Knowledge, Attitudes, and Behavior of Oncology Professionals Regarding Long-Term Care
+
+{{< include sections/03-kab-professionals.qmd >}}
+
+## Cancer Patients' Knowledge, Attitudes, and Willingness Toward Long-Term Care
+
+{{< include sections/04-kab-patients.qmd >}}
+
+## Barriers and Facilitators to Long-Term Care Referral
+
+{{< include sections/05-barriers.qmd >}}
+
+## Discrepancies Between Professional and Patient Perspectives
+
+{{< include sections/06-discrepancy.qmd >}}
+
+## Care Coordination Models and Survivorship Care
+
+{{< include sections/07-care-models.qmd >}}
+
+# Discussion
+
+{{< include sections/08-discussion.qmd >}}
+
+# Funding {.unnumbered}
+
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors. The authors declare no competing interests.
+
+# References {.unnumbered}
+
+::: {#refs}
+:::

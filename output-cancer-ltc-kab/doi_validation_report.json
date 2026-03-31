@@ -1,0 +1,10 @@
+{
+  "total": 174,
+  "valid": 172,
+  "invalid": 1,
+  "no_doi": 1,
+  "open_access": 93,
+  "invalid_dois": [
+    "10.2143/ACB.66.2.2062525 — Patient adherence to oral anticancer drugs: An emerging issue in modern oncology"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "identification": {
+    "scopus": 52,
+    "pubmed": 82,
+    "embase": 87,
+    "total": 221
+  },
+  "screening": {
+    "duplicates_removed": 20,
+    "after_dedup": 201,
+    "citescore_rejected": 22,
+    "doi_invalid": 1,
+    "after_filter": 173
+  },
+  "selection": {
+    "assessed_full_text": 173,
+    "excluded_low_relevance": 93,
+    "included": 80
+  }
+}

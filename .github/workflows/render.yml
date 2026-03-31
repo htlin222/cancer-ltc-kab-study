@@ -1,0 +1,50 @@
+name: Render & Release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'output-cancer-ltc-kab/**'
+  workflow_dispatch:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
+
+      - name: Render PDF
+        run: |
+          cd output-cancer-ltc-kab
+          quarto render literature_review.qmd --to pdf
+
+      - name: Render DOCX
+        run: |
+          cd output-cancer-ltc-kab
+          quarto render literature_review.qmd --to docx
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: manuscript
+          path: |
+            output-cancer-ltc-kab/literature_review.pdf
+            output-cancer-ltc-kab/literature_review.docx
+          retention-days: 90
+
+      - name: Create Release
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ github.run_number }}
+          name: "Manuscript Build #${{ github.run_number }}"
+          files: |
+            output-cancer-ltc-kab/literature_review.pdf
+            output-cancer-ltc-kab/literature_review.docx
+          generate_release_notes: true

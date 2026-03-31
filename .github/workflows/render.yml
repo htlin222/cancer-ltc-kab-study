@@ -36,6 +36,8 @@ jobs:
           path: |
             output-cancer-ltc-kab/literature_review.pdf
             output-cancer-ltc-kab/literature_review.docx
+            output-cancer-ltc-kab/references.bib
+            output-cancer-ltc-kab/references.csv
           retention-days: 90
 
       - name: Create Release
@@ -47,4 +49,6 @@ jobs:
           files: |
             output-cancer-ltc-kab/literature_review.pdf
             output-cancer-ltc-kab/literature_review.docx
+            output-cancer-ltc-kab/references.bib
+            output-cancer-ltc-kab/references.csv
           generate_release_notes: true
